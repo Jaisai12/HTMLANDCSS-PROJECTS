@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  background-color: #121321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  perspective: 1000px;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgb(206, 35, 206), rgb(221, 145, 221));
+  transform: translate(-150px, -100px);
+}
+section::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgb(206, 35, 206), rgb(221, 145, 221));
+  transform: translate(200px, 100px);
+}
+.maincontainer {
+  position: relative;
+  height: 225px;
+  width: 375px;
+  border-radius: 20px;
+  z-index: 100;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+/* .maincontainer:hover {
+  transform: rotateY(180deg); 
+}
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  background: rgba(244, 244, 244, 0.118);
+
+
+  backface-visibility: hidden;
+}
+
+.front-face {
+  position: absolute;
+
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card.back-face {
+  position: absolute;
+  transform: rotateY(180deg);
+} */
+/* ---------------------------------------------------------------------------- */
+.maincontainer:hover {
+  transform: rotateY(180deg); /* Flip the card on hover */
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  background: rgba(244, 244, 244, 0.118);
+  backface-visibility: hidden; /* Ensure one side is hidden when flipped */
+}
+
+.front-face {
+  position: absolute;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden; /* Hides the front face when flipped */
+}
+
+.card.back-face {
+  position: absolute;
+  transform: rotateY(180deg); /* Rotate the back face */
+  backface-visibility: hidden; /* Ensure the back face is hidden when not flipped */
+}
+/* -------------------------------------------------------------------------------------- */
+.black-strip {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+/* Signature area */
+.signature {
+  margin-top: 20px;
+}
+
+.signature h5 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.signature-field {
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+/* CVV Section */
+.cvv {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.cvv h5 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.cvv-number {
+  width: 50px;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  color: black;
+}
+.head {
+  display: flex;
+}
+.header {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.cardtxt {
+  margin-top: 13px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.chip {
+  margin-right: 10px;
+}
+
+.carddetails {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 50px 20px 0 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
