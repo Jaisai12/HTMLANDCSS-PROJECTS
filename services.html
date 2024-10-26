@@ -25,6 +25,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <style>
+      .bg-blur-ser {
+        backdrop-filter: blur(10px);
+      }
+    </style>
   </head>
   <body class="p-0 m-0 box-border overflow-hidden">
     <!-- bg-[#3EBFFF] -->
@@ -68,13 +73,19 @@
         />
       </div>
       <div
-        class="h-36 w-36 bg-white absolute right-6 [display:none] mb-10 text-center space-y-4 ham-box-services"
+        class="h-36 w-36 bg-yellow-300 bg-opacity-50 bg-blur-ser absolute right-6 [display:none] mb-10 text-start px-4 content-center space-y-4 ham-box-services"
         id="menubox"
       >
-        <p><a href="/sunny/about.html">About</a></p>
+        <p class="block w-full hover:bg-yellow-300 text-xl font-bold">
+          <a href="/sunny/about.html">About</a>
+        </p>
 
-        <p><a href="/sunny/projects.html">Projects</a></p>
-        <p><a href="/sunny/contact.html">Contact</a></p>
+        <p class="block w-full hover:bg-yellow-300 text-xl font-bold">
+          <a href="/sunny/projects.html">Projects</a>
+        </p>
+        <p class="block w-full hover:bg-yellow-300 text-xl font-bold">
+          <a href="/sunny/contact.html">Contact</a>
+        </p>
       </div>
     </div>
 

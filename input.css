@@ -144,8 +144,6 @@ nav ul li {
   left: 0;
   top: 80px;
   z-index: 100;
-  
-
 }
 
 #menubox {
@@ -156,7 +154,8 @@ nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  display: none ;
+  display: none;
+  transform: translateX(40px);
 }
 
 #menubox:hover {
@@ -164,7 +163,6 @@ nav ul li {
   padding: 5px;
 }
 #menubox p a:hover {
-  background-color: yellow;
   padding: 5px;
   border-radius: 5px;
 }
@@ -360,6 +358,9 @@ nav ul li {
       display: none;
     }
   }
+  .ham-about {
+    display: block !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -532,6 +533,9 @@ nav ul li {
     display: block !important;
     align-items: center !important;
     margin-top: 10px;
+  }
+  .ham-about {
+    display: block !important;
   }
 }
 @media (max-width: 350px) {

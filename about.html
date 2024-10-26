@@ -21,6 +21,9 @@
       rel="stylesheet"
     />
     <style>
+      .abt-bg-blur {
+        backdrop-filter: blur(5px);
+      }
       .mobile-menu {
         display: none;
       }
@@ -38,15 +41,18 @@
   <body class="m-0 p-0 box-border h-auto w-svw">
     <div class="h-full">
       <!--  Main container -->
-      <div class="sub-contain1 h-auto w-full flex">
+      <div
+        class="sub-contain1 h-auto w-full flex bg-[#3EBFFF] items-center justify-center"
+      >
         <div
           class="h-96 w-3/4 px-14 justify-center items-center content-center bg-[#3EBFFF] inner-subcontain"
+          id="abt-container-header"
         >
           <div class="flex justify-between down">
             <h1
               class="text-black logo text-3xl font-bold barlow-semibold -translate-y-14 relative top-1"
             >
-              <a href="/sunny/index.html">sunnyside</a>
+              <a href="./index.html">sunnyside</a>
             </h1>
 
             <!-- Desktop Menu -->
@@ -57,19 +63,17 @@
                 <li
                   class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
                 >
-                  <a href="/sunny/services.html">Services</a>
+                  <a href="./services.html">Services</a>
                 </li>
                 <li
                   class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
                 >
-                  <a href="/sunny/projects.html">Projects</a>
+                  <a href="./projects.html">Projects</a>
                 </li>
                 <li
                   class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
                 >
-                  <a href="/sunny/contact.html">
-                    <a href="/sunny/contact.html">Contact</a></a
-                  >
+                  <a href="./contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -95,34 +99,45 @@
               </button>
 
               <!-- Hidden Mobile Menu Links -->
-              <ul
-                id="menu"
-                class="hidden flex flex-col mt-4 space-y-4 bg-white p-4 rounded-lg text-black"
-              >
-                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
-                  <a href="/sunny/services.html">Services</a>
-                </li>
-                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
-                  <a href="/sunny/projects.html">Projects</a>
-                </li>
-                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
-                  <a href="/sunny/contact.html"> Contact</a>
-                </li>
-              </ul>
             </div>
           </div>
-          <p class="font2 text-5xl text-white">MAKE IT LIVE!, LIKE LIVING...</p>
-          <p class="my-6 font-semibold text-white">
-            we are a full-service creative agency dedicated to transforming
-            brands and accelerating growth. Our mission is to help businesses
-            stand out with powerful, captivating visuals that speak to your
-            audience and make a lasting impression.
-          </p>
-          <p
-            class="text-xl text-white font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          <div id="abtText">
+            <p class="font2 text-5xl text-white">
+              MAKE IT LIVE!, LIKE LIVING...
+            </p>
+            <p class="my-6 font-semibold text-white">
+              we are a full-service creative agency dedicated to transforming
+              brands and accelerating growth. Our mission is to help businesses
+              stand out with powerful, captivating visuals that speak to your
+              audience and make a lasting impression.
+            </p>
+
+            <p
+              class="text-xl text-white font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+            >
+              Learn more
+            </p>
+          </div>
+        </div>
+        <div
+          class="-translate-y-72 bg-transparent bg-white bg-opacity-50 w-full flex items-center abt-bg-blur filter-[blur(30px)]"
+        >
+          <ul
+            id="menu"
+            class="hidden flex flex-col mt-4 space-y-4 p-4 rounded-lg text-black w-full filter-[blur(30px)]"
           >
-            Learn more
-          </p>
+            <li
+              class="hover:bg-gray-100 block :w-full p-2 rounded-lg cursor-pointer"
+            >
+              <a href="./services.html">Services</a>
+            </li>
+            <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+              <a href="./projects.html">Projects</a>
+            </li>
+            <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+              <a href="./contact.html"> Contact</a>
+            </li>
+          </ul>
         </div>
         <div
           class="h-96 w-1/2 bg-[url('https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center inner-subcontain2"
@@ -185,9 +200,14 @@
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
+      const headerabtconatiner = document.getElementById(
+        "abt-container-header"
+      );
+      const abtText = document.getElementById("abtText");
 
       menuBtn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
+        abtText.classList.toggle("translate-y-24");
       });
     </script>
   </body>
