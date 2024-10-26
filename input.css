@@ -374,6 +374,10 @@ nav ul li {
   .insub-2-text {
     height: 650px !important;
   }
+
+  .abt-menu-list {
+    transform: translateY(-450px) !important;
+  }
 }
 
 @media (min-width: 600px) {
