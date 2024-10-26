@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="input.css" />
+
+    <!-- Font Preconnections and Loading Barlow Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Preconnections and Loading Fraunces Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons for extra icons support -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN for utility-first CSS classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="m-0 p-0 box-border w-screen overflow-x-hidden h-auto">
+    <!-- Header Section with Background Image -->
+    <header
+      class="bg-[url('./images/desktop/header1.jpg')] bg-header bg-no-repeat bg-cover bg-center relative"
+    >
+      <div class="px-2 nav-bar">
+        <!-- Navigation Bar with Logo and Links -->
+        <nav class="flex justify-between mx-6 items-center">
+          <!-- Logo Section -->
+          <div>
+            <h1 class="text-white logo text-3xl font-bold barlow-semibold">
+              sunnyside
+            </h1>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul
+            class="list-none flex gap-14 text-white font-semibold text-center items-center justify-center"
+          >
+            <li
+              class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
+            >
+              <a href="/sunny/about.html">About</a>
+            </li>
+            <li
+              class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
+            >
+              <a href="/sunny/services.html">Services</a>
+            </li>
+            <li
+              class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
+            >
+              <a href="/sunny/projects.html"> Projects</a>
+            </li>
+            <li
+              class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
+            >
+              <a href="/sunny/contact.html">Contact</a>
+            </li>
+            <li class="[display:none] ham" id="hamber">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </li>
+          </ul>
+ 
+      </div>
+      <div
+        class="h-36 w-36 bg-white absolute right-6 [display:none] mb-10 text-center space-y-4"
+        id="menubox"
+      >
+        <p><a href="/sunny/about.html">About</a></p>
+        <p><a href="/sunny/services.html">Services</a></p>
+        <p><a href="/sunny/projects.html">Projects</a></p>
+        <p><a href="/sunny/contact.html">Contact</a></p>
+      </div>
+
+      <!-- Centered Heading and Arrow Image -->
+      <div class="mt-14" id="menucontent">
+        <p class="font2 text-white text-4xl text-center -translate-x-2">
+          WE ARE CREATIVES
+        </p>
+
+        <img
+          src="images/arrow-alt-ldown-alt-svgrepo-com.svg"
+          alt=""
+          class="mx-auto h-52"
+          id="imgarrow"
+        />
+      </div>
+    </header>
+
+    <main>
+      <!-- -------------------------------------------------------------------------------------------------- -->
+      <!-- First Content Section: Transform Your Brand -->
+      <div class="flex box-flex">
+        <!-- Text Section -->
+        <div class="grh place-content-center px-40 txtbox">
+          <p class="font2 text-5xl">Transform your brand</p>
+          <p class="my-6 font-semibold text-gray-500">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <p
+            class="text-xl font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          >
+            Learn more
+          </p>
+        </div>
+        <!-- Image Section -->
+        <div
+          class="grh bg-[url('./images/desktop/image-transform.jpg')] bg-center"
+        ></div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+      <!-- Second Content Section: Stand Out -->
+      <div class="flex box-flex">
+        <!-- Image Section -->
+        <div
+          class="grh bg-[url('./images/desktop/image-stand-out.jpg')] bg-center bg-cover"
+        ></div>
+
+        <!-- Text Section -->
+        <div class="grh place-content-center px-40 txtbox">
+          <p class="font2 text-5xl">Stand out to the right audience</p>
+          <p class="my-6 font-semibold text-gray-500">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <p
+            class="text-xl font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          >
+            Learn more
+          </p>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+      <!-- Third Content Section: Graphic Design and Photography -->
+      <div class="flex box-flex">
+        <!-- Graphic Design Section with Background Image -->
+        <div
+          class="grh bg-[url('./images/desktop/image-graphic-design.jpg')] relative bg-cover img-center"
+        >
+          <div class="absolute bottom-4 left-0 px-36 txtbox">
+            <p class="text-2xl font-bold text-center text-[#24554A]">
+              Graphic design
+            </p>
+            <p class="text-[#24554A] text-xl font-semibold text-center">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients
+              attention.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photography Section with Background Image -->
+        <div
+          class="grh bg-[url('./images/desktop/image-photography.jpg')] bgp relative bg-cover img-center"
+        >
+          <div class="absolute bottom-4 left-0 px-36 txtbox">
+            <p class="text-2xl font-bold text-center text-[#195975]">
+              Photography
+            </p>
+            <p class="text-[#195975] text-xl font-semibold text-center">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+      <!-- Testimonials Section -->
+      <div
+        class="h-auto w-[70%] flex flex-col items-center text-center mx-auto justify-around my-16"
+      >
+        <p
+          class="font2 font-semibold text-2xl text-gray-600 text-center opacity-50 mb-4"
+        >
+          CLIENT TESTIMONIALS
+        </p>
+
+        <!-- Testimonials Content (Parent Flex Container for all testimonials) -->
+        <div class="flex justify-evenly gap-10 small md:flex-row">
+          <!-- ---------Inner Testimonial Box 1 ------------- -->
+          <div class="text-center flex justify-center flex-col items-center">
+            <div class="h-16 w-16 rounded-full overflow-hidden">
+              <img src="images/image-emily.jpg" alt="Emily" />
+            </div>
+            <p class="my-4">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <p class="font-bold mt-6">Emily R.</p>
+            <p class="opacity-50">Marketing Director</p>
+          </div>
+
+          <!-- ---------Inner Testimonial Box 2 ------------- -->
+          <div class="text-center flex justify-center flex-col items-center">
+            <div class="h-16 w-16 rounded-full overflow-hidden">
+              <img src="images/image-thomas.jpg" alt="Thomas" />
+            </div>
+            <p class="my-4">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <p class="font-bold mt-6">Thomas S.</p>
+            <p class="opacity-50">Chief Operating Officer</p>
+          </div>
+
+          <!-- ---------Inner Testimonial Box 3 ------------- -->
+          <div class="text-center flex justify-center flex-col items-center">
+            <div class="h-16 w-16 rounded-full overflow-hidden">
+              <img src="images/image-jennie.jpg" alt="Jennie" />
+            </div>
+            <p class="my-4">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended.
+            </p>
+            <p class="font-bold mt-6">Jennie F.</p>
+            <p class="opacity-50">Business Owner</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main container of test monials -->
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+
+      <!--       GALLERY SECTION -->
+
+      <div class="h-auto w-full mt-10">
+        <div class="galgird">
+          <div class="h-full object-cover">
+            <img
+              src="images/desktop/image-gallery-milkbottles.jpg"
+              alt=""
+              height="256px "
+            />
+          </div>
+          <div>
+            <img src="images/desktop/image-gallery-orange.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/desktop/image-gallery-cone.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- parent and main container -->
+      </div>
+      <!-- -------------------------------------------------------------------------------------------------- -->
+    </main>
+
+    <footer class="h-auto w-full bg-[#90D4C5] text-center py-8 space-y-8">
+      <p class="text-[#2C7363] tex-2xl font-bold">sunnyside</p>
+      <div class="justify-center flex">
+        <ul class="flex w-56 justify-between">
+          <li class="text-[#2c7363] opacity-75">About</li>
+          <li class="text-[#2c7363] opacity-75">Services</li>
+          <li class="text-[#2c7363] opacity-75">Projects</li>
+        </ul>
+      </div>
+
+      <div class="flex text-center justify-center">
+        <ul class="flex w-32 justify-between">
+          <li>
+            <i
+              class="fa-brands fa-square-facebook text-[#2c7363] opacity-75"
+            ></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram text-[#2c7363] opacity-75"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-twitter text-[#2c7363] opacity-75"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-pinterest text-[#2c7363] opacity-75"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      const menubox = document.getElementById("menubox");
+      const hamber = document.getElementById("hamber");
+      const menucontent = document.getElementById("menucontent");
+      const imgarrow = document.getElementById("imgarrow");
+      hamber.onclick = function () {
+        if (menubox.style.display === "none") {
+          menubox.style.display = "block";
+          menucontent.style.transform = "translateY(100px)";
+          imgarrow.style.display = "none";
+        } else {
+          menubox.style.display = "none";
+          menucontent.style.transform = "translateY(0px)";
+          imgarrow.style.display = "block";
+        }
+      };
+    </script>
+  </body>
+</html>

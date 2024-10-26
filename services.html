@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Preconnections and Loading Fraunces Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons for extra icons support -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="p-0 m-0 box-border overflow-hidden">
+    <!-- bg-[#3EBFFF] -->
+    <div class="h-auto w-full flex justify-between">
+      <div class="flex justify-around w-2/3 mt-4">
+        <nav>
+          <ul>
+            <li class="[display:none] ham-services" id="hamber">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </li>
+          </ul>
+        </nav>
+        <h1
+          class="text-black logo text-3xl font-bold barlow-semibold relative top-1"
+        >
+          <a href="/sunny/index.html">sunnyside </a>
+        </h1>
+        <div class="text-center align-middle items-center ab-nav">
+          <ul class="flex space-x-4 items-center">
+            <li class="hover:bg-yellow-300 p-2 rounded-lg cursor-pointer">
+              <a href="/sunny/services.html">Services</a>
+            </li>
+            <li class="hover:bg-yellow-300 p-2 rounded-lg cursor-pointer">
+              <a href="/sunny/projects.html">Projects</a>
+            </li>
+            <li class="hover:bg-yellow-300 p-2 rounded-lg cursor-pointer">
+              <a href="/sunny/contact.html"> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="h-96 w-96 def-round bg-yellow-400 justify-center items-center"
+      >
+        <img
+          src="images/pngwing.com.png"
+          alt=""
+          width="350px"
+          class="mx-auto"
+        />
+      </div>
+      <div
+        class="h-36 w-36 bg-white absolute right-6 [display:none] mb-10 text-center space-y-4 ham-box-services"
+        id="menubox"
+      >
+        <p><a href="/sunny/about.html">About</a></p>
+
+        <p><a href="/sunny/projects.html">Projects</a></p>
+        <p><a href="/sunny/contact.html">Contact</a></p>
+      </div>
+    </div>
+
+    <main>
+      <div class="flex w-4/5 mx-auto justify-evenly main-png-service">
+        <div class="-translate-y-56">
+          <img
+            src="images/—Pngtree—brand promotion vector concept color_14868001.png"
+            alt=""
+            width="320px"
+            class="main-img-service"
+          />
+        </div>
+        <div>
+          <p
+            class="text-4xl font-bold font2 w-3/4 -translate-y-16 service-main-txt"
+          >
+            Unleash Your Brand's Potential: Let Your Voice Be Heard!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex service-foot">
+      <div
+        class="h-96 w-96 bg-[#3EBFFF] -translate-y-[270px] curve relative overflow-hidden -z-10 border-none rotate-[270deg]"
+      ></div>
+
+      <p class="w-[550px] h-80 -translate-y-56 translate-x-20 foot-txt">
+        we specialize in elevating your brand’s presence in a crowded
+        marketplace. Our comprehensive brand promotion services are designed to
+        enhance your visibility and resonate with your target audience.
+        offerings.
+      </p>
+    </footer>
+
+    <script>
+      const menubox = document.getElementById("menubox");
+      const hamber = document.getElementById("hamber");
+
+      hamber.onclick = function () {
+        if (menubox.style.display === "none") {
+          menubox.style.display = "block";
+        } else {
+          menubox.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

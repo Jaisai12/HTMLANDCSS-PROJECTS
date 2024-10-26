@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Preconnections and Loading Fraunces Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .mobile-menu {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .desktop-menu {
+          display: none;
+        }
+        .mobile-menu {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 box-border h-auto w-svw">
+    <div class="h-full">
+      <!--  Main container -->
+      <div class="sub-contain1 h-auto w-full flex">
+        <div
+          class="h-96 w-3/4 px-14 justify-center items-center content-center bg-[#3EBFFF] inner-subcontain"
+        >
+          <div class="flex justify-between down">
+            <h1
+              class="text-black logo text-3xl font-bold barlow-semibold -translate-y-14 relative top-1"
+            >
+              <a href="/sunny/index.html">sunnyside</a>
+            </h1>
+
+            <!-- Desktop Menu -->
+            <div
+              class="-translate-y-14 text-center content-center ab-nav desktop-menu"
+            >
+              <ul class="flex space-x-4">
+                <li
+                  class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
+                >
+                  <a href="/sunny/services.html">Services</a>
+                </li>
+                <li
+                  class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
+                >
+                  <a href="/sunny/projects.html">Projects</a>
+                </li>
+                <li
+                  class="hover:bg-white p-2 rounded-lg hover:bg-opacity-40 cursor-pointer"
+                >
+                  <a href="/sunny/contact.html">
+                    <a href="/sunny/contact.html">Contact</a></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="mobile-menu -translate-y-14 relative top-1">
+              <button id="menu-btn" class="focus:outline-none">
+                <!-- Hamburger icon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+
+              <!-- Hidden Mobile Menu Links -->
+              <ul
+                id="menu"
+                class="hidden flex flex-col mt-4 space-y-4 bg-white p-4 rounded-lg text-black"
+              >
+                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+                  <a href="/sunny/services.html">Services</a>
+                </li>
+                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+                  <a href="/sunny/projects.html">Projects</a>
+                </li>
+                <li class="hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+                  <a href="/sunny/contact.html"> Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="font2 text-5xl text-white">MAKE IT LIVE!, LIKE LIVING...</p>
+          <p class="my-6 font-semibold text-white">
+            we are a full-service creative agency dedicated to transforming
+            brands and accelerating growth. Our mission is to help businesses
+            stand out with powerful, captivating visuals that speak to your
+            audience and make a lasting impression.
+          </p>
+          <p
+            class="text-xl text-white font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          >
+            Learn more
+          </p>
+        </div>
+        <div
+          class="h-96 w-1/2 bg-[url('https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center inner-subcontain2"
+        ></div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------------------------------- -->
+      <div class="sub-contain2 flex h-auto w-full">
+        <div
+          class="h-72 w-1/4 bg-[url('https://images.unsplash.com/photo-1613666816952-8cc2c5f2d54a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center in-sub2"
+        ></div>
+        <div
+          class="h-72 w-1/2 place-content-center content-center px-14 in-sub2 insub-2-text"
+        >
+          <p class="font2 text-3xl">
+            Creative Writing Offers Us A Sense Of Freedom
+          </p>
+          <p class="my-6 font-semibold text-black opacity-50">
+            we are a full-service creative agency dedicated to transforming
+            brands and accelerating growth. Our mission is to help businesses
+            stand out with powerful, captivating visuals that speak to your
+            audience and make a lasting impression.
+          </p>
+          <p
+            class="text-xl font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          >
+            Learn more
+          </p>
+        </div>
+        <div
+          class="h-72 w-1/4 bg-[url('https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover/ bg-center in-sub2 in-sub2-img"
+        ></div>
+      </div>
+      <!-- -------------------------------------------------------------------------------------------------- -->
+
+      <div class="sub-contain3 h-auto w-full flex">
+        <div
+          class="h-96 w-1/2 px-7 justify-center items-center content-center bg-gray-800 in-sub3"
+        >
+          <p class="font2 text-5xl text-white">Transform your brand</p>
+          <p class="my-6 font-semibold text-white">
+            we are a full-service creative agency dedicated to transforming
+            brands and accelerating growth. Our mission is to help businesses
+            stand out with powerful, captivating visuals that speak to your
+            audience and make a lasting impression.
+          </p>
+          <p
+            class="text-xl text-white font-bold relative inline-block after:absolute after:left-0 after:top-6 after:h-1 after:w-full after:bg-yellow-200 after:rounded-lg"
+          >
+            Learn more
+          </p>
+        </div>
+        <div
+          class="h-96 w-3/4 bg-[url('https://images.unsplash.com/photo-1532620161677-a1ca7d5d530f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center in-sub3"
+        ></div>
+      </div>
+      <!-- Main container ends -->
+    </div>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
