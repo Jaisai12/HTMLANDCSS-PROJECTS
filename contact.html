@@ -26,12 +26,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <style>
+      .bg-my-blur{
+        backdrop-filter: blur(20px);
+      }
+    </style>
   </head>
   <body class="m-0 p-0 box-border bg-yellow-300 overflow-hidden">
      <header class="flex justify-around pt-3 ">
         <div class="header-txt-contact"> 
             <h1 class=" logo text-3xl font-bold barlow-semibold">
-           <a href="/sunny/index.html">sunnyside</a>   
+           <a href="./index.html">sunnyside</a>   
             </h1>
         </div>
 
@@ -42,17 +47,17 @@
             <li
               class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
             >
-              <a href="/sunny/about.html">About</a>
+              <a href="./about.html">About</a>
             </li>
             <li
               class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
             >
-              Services
+           <a href="./services.html">Services</a>   
             </li>
             <li
               class="hover:text-black cursor-pointer hover:bg-white h-10 w-20 text-center rounded-3xl place-content-center transition-all"
             >
-              Projects
+              <a href="./projects.html">Projects</a>
             </li>
       
             <li class="[display:none] ham-contact" id="hamber">
@@ -61,12 +66,12 @@
           </ul>
         </div>
            <div
-        class="h-36 w-36 bg-white absolute right-6 [display:none] mb-10 text-center space-y-4 contact-menu-box"
-        id="menubox"
+        class="h-36 w-36 bg-white bg-opacity-50 ml-2 bg-my-blur absolute right-0 [display:none] mb-10  content-center justify-end text-end contact-menu-box space-y-4"
+        id="menubox1"
       >
-        <p><a href="/sunny/about.html">About</a></p>
-        <p>Services</p>
-        <p>Projects</p>
+        <p class=" pr-16 hover:bg-yellow-300 w-full block"><a href="./about.html">About</a></p>
+        <p class=" pr-16 hover:bg-yellow-300 w-full block"><a href="./services.html">Services</a></p>
+        <p class=" pr-16 hover:bg-yellow-300 w-full block"><a href="./projects.html">Projects</a></p>
         
       </div>
      </header>
@@ -107,7 +112,7 @@
 
 
      <script>
-      const menubox = document.getElementById("menubox");
+      const menubox = document.getElementById("menubox1");
       const hamber = document.getElementById("hamber");
     
       hamber.onclick = function () {

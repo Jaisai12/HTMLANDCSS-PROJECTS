@@ -170,10 +170,7 @@ nav ul li {
   backdrop-filter: blur(20px);
 }
 
-#menubox:hover {
-  transform: scale(1.05);
-  padding: 5px;
-}
+
 #menubox p a:hover {
   padding: 5px;
   border-radius: 5px;
